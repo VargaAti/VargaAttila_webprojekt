@@ -16,10 +16,65 @@ body {
 }
 
 h1 {
-  text-align: center;
-  font-size: 2.5em;
-  color: #ffffff;
-  margin-bottom: 30px;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 60px;
+  animation: flicker 3s infinite alternate linear;
+}
+
+@keyframes  flicker {
+  0% {
+    text-shadow:
+      0 3px 20px red,
+      0 0 20px red,
+      0 0 10px orange,
+      0 0 0 yellow,
+      0 0 5px yellow,
+      -2px -5px 5px yellow,
+      4px -10px 10px yellow;
+  }
+  25% {
+    text-shadow:
+      0 3px 20px red,
+      0 0 30px red,
+      0 0 20px orange,
+      0 0 5px yellow,
+      -2px -5px 5px yellow,
+      3px -10px 10px yellow,
+      -4px -15px 20px yellow;
+  }
+  50% {
+    text-shadow:
+      0 3px 20px red,
+      0 0 20px red,
+      0 -5px 10px orange,
+      -2px -5px 5px yellow,
+      3 -10px 10px yellow,
+      -4px -15px 20px yellow,
+      2px -20px 30px rgba(255,255,0,0.5);
+  }
+  75% {
+    text-shadow:
+      0 3px 20px red,
+      0 0 20px red,
+      0 -5px 10px orange,
+      3 -5px 5px yellow,
+      -4px -10px 10px yellow,
+      2px -20px 30px rgba(255,255,0,0.5),
+      0 -25px 40px rgba(255,255,0,0);
+  }
+  100% {
+    text-shadow:
+      0 3px 20px red,
+      0 0 20px red,
+      0 0 10px orange,
+      0 0 0 yellow,
+      0 0 5px yellow,
+      -2px -5px 5px yellow,
+      4px -10px 10px yellow;
+  }
 }
 
 section {
@@ -64,53 +119,24 @@ strong {
   transform: translateY(-2px);
 }
 
-#locomotion {
-  position: absolute;
-  left: 20px;
-  top: 300px;
-  width: 200px;
-
-  opacity: 0;
-  transform: translateX(-100px);
-  animation: beuszas 1s ease-out forwards;
-}
-
-.locomotion-img {
-  width: 200%;
-  height: auto;
+#kazan {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 0.75rem #111827);
 }
 
-.locomotion-text {
-  font-size: 18px;
-  font-style: italic;
-}
-
-#rchloco {
+#heusinger {
   position: absolute;
-  right: 215px;
-  top: 300px;
-  width: 200px;
-
-  opacity: 0;
-  transform: translateX(100px);
-  animation: beuszas 1s ease-out forwards;
+  top: 1710px;
+  left: 770px;
+  width: 34.5%;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 1rem rgb(63, 63, 63));
 }
 
-.rchloco-img {
-  width: 200%;
-  height: auto;
-  display: block;
-}
-
-.rchloco-text {
-  font-size: 18px;
-  font-style: italic;
-}
-
-@keyframes beuszas {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+ol {
+  font-size: large;
+  font-weight: bold;
 }
