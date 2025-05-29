@@ -16,15 +16,16 @@ body {
 }
 
 h1 {
-    color: #FFFFFF;
-    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 60px;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 60px;
   animation: flicker 3s infinite alternate linear;
+  text-transform: uppercase;
 }
 
-@keyframes  flicker {
+@keyframes flicker {
   0% {
     text-shadow:
       0 3px 20px red,
@@ -35,6 +36,7 @@ h1 {
       -2px -5px 5px yellow,
       4px -10px 10px yellow;
   }
+
   25% {
     text-shadow:
       0 3px 20px red,
@@ -45,6 +47,7 @@ h1 {
       3px -10px 10px yellow,
       -4px -15px 20px yellow;
   }
+
   50% {
     text-shadow:
       0 3px 20px red,
@@ -53,8 +56,9 @@ h1 {
       -2px -5px 5px yellow,
       3 -10px 10px yellow,
       -4px -15px 20px yellow,
-      2px -20px 30px rgba(255,255,0,0.5);
+      2px -20px 30px rgba(255, 255, 0, 0.5);
   }
+
   75% {
     text-shadow:
       0 3px 20px red,
@@ -62,9 +66,10 @@ h1 {
       0 -5px 10px orange,
       3 -5px 5px yellow,
       -4px -10px 10px yellow,
-      2px -20px 30px rgba(255,255,0,0.5),
-      0 -25px 40px rgba(255,255,0,0);
+      2px -20px 30px rgba(255, 255, 0, 0.5),
+      0 -25px 40px rgba(255, 255, 0, 0);
   }
+
   100% {
     text-shadow:
       0 3px 20px red,
